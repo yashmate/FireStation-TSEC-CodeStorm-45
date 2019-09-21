@@ -1,0 +1,116 @@
+<html>
+   <head>
+      <title>INSERTION</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script>
+      <script>
+   $(document).ready(function() {
+      $('select').material_select();
+   });
+</script>
+   </head>
+
+   <body class = "container">
+      <div class = "row">
+         <form class = "col s12" action="http://localhost:5000/insert" method="post">
+            <div class = "row">
+
+             </div>
+               <div class="row">
+               <div class = "input-field col s12">
+                  <label for = "location">Location</label>
+                  <input name="location"id = "location" type = "text"
+                     class = "validate" required />
+               </div>
+            </div>
+
+            <div class = "row">
+               <div class = "input-field col s12">
+                  <input  name="longitude"id = "longitude" type = "text"
+                     class = "validate">
+                  <label for = "longitude">Longitude</label>
+               </div>
+            </div>
+            <div class = "row">
+               <div class = "input-field col s12">
+                  <input name="latitude"id = "latitude" type = "text"
+                     class = "validate">
+                  <label for = "latitude">Latitude</label>
+               </div>
+            </div>
+            <div class="row">
+
+         <label>Intensity</label>
+            <select name="intensity">
+               <option value = "" disabled selected></option>
+               <option value = "1">1</option>
+               <option value = "2">2</option>
+               <option value = "3">3</option>
+
+               <option value = "4">4</option>
+               <option value = "5">5</option>
+               <option value = "6">6</option>
+               <option value = "7">7</option>
+               <option value = "8">8</option>
+               <option value = "9">9</option>
+               <option value = "10">10</option>
+            </select>
+         </div>
+
+
+         <div class="row">
+
+       <label>Cause</label>
+         <select name="cause">
+            <option value = "" disabled selected></option>
+            <option value = "Electrical Appliances">Electrical Appliances</option>
+            <option value = "Smoking">Smoking</option>
+            <option value = "Faulty Wiring">Faulty Wiring</option>
+            <option value = "Unattended Stoves">Unattended Stoves</option>
+            <option value = "Flammable Liquids">Flammable Liquids</option>
+
+            <option value = "Forest Fires">Forest Fires</option>
+
+         </select>
+       </div>
+       <div class="row">
+         <div class = "input-field col s12">
+            <input  name="casualities"id = "casualities" type = "text"
+               class = "validate">
+            <label for = "casualities">Casualities</label>
+         </div>
+       </div>
+
+       <div class="row">
+         <div class = "input-field col s12">
+            <input  name="firefighter"id = "firefighter" type = "text"
+               class = "validate">
+            <label for = "firefighter">FireFighters</label>
+         </div>
+       </div>
+
+       <div class="row">
+         <div class = "input-field col s12">
+            <input  name="current_status"id = "current_status" type = "text"
+               class = "validate">
+            <label for = "current_status">Current Status</label>
+         </div>
+       </div>
+       <div class="row">
+         <input class="btn waves-effect waves-light" type="submit" name="action" SUBMIT>
+ <i class="material-icons right">send</i>
+
+       </div>
+
+
+         </form>
+      </div>
+   </body>
+</html>

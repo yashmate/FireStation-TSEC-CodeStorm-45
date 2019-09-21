@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <style>
+     body{
+       background-image: url('checkforfire.jpg');
+       background-size: cover;
+       text-align: center;
+     }
+     form{
+       width: 45%;
+       height: 60%;
+       border:1px solid teal;
+       margin-left: 20%;
+       margin-top: 20%;
+       color: teal
+     }
+     #home{
+       position: absolute;
+       left: 85%;
+       top:3%
+     }
+     #back{
+       position: absolute;
+       right: 85%;
+       top:3%
+     }
+     </style>
+      <title>Check for Fire</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script>
+   </head>
+
+   <body>
+     <a href="file:///home/yash/Desktop/Fire%20Fighting%20System/home.html"id='home'class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">home
+</i></a>
+<a href="file:///home/yash/Desktop/Fire%20Fighting%20System/home.html"id='back'class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">chevron_left
+</i></a>
+     <form class="col s12">
+     <div class = "row">
+        <div class = "input-field col s12">
+           <i class = "material-icons prefix">mode_edit</i>
+           <textarea id = "address" class = "materialize-textarea"></textarea>
+           <label for = "address">Location</label>
+        </div>
+     </div>
+     <div class="row">
+       <a class="waves-effect waves-light btn-large"><i class="material-icons right">cloud</i>CHECK FOR FIRE</a>
+     </div>
+
+   </form>
+   </body>
+</html>

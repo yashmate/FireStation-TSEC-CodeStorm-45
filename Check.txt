@@ -1,0 +1,14 @@
+x11=df.iloc[1:,3:10].values
+y11=df.iloc[1:,2].values
+z11=df.iloc[1:,10].values
+        #np.ravel(y)
+        from sklearn.linear_model import LogisticRegression
+        #from sklearn.model_selection import train_test_split
+        #_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 1/3, random_state = 0)
+        lin=LogisticRegression()
+        lin.fit(x11,y11)
+        ans=lin.predict([xm])
+        lin.fit(x11,z11)
+        ans2=lin.predict([xm])
+        return render_template('predict.html',val2=ans[0],val1="The Estimated No. of Fire Fighters Required are: ",val3=ans2[0],val4='The estimated No. of Fire Brigades Required are: ')
+    return render_template('predict.html')

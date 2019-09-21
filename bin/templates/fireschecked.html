@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
+<style>
+body{
+  text-align: center;
+  background-color: teal;
+  color: white;
+  font-family: 'Turret Road', cursive;
+}
+</style>
+<title>Fires Checked</title>
+</head>
+<body>
+<h1 align=center>The Fires in your Current Vicinity are </h1><br><br>
+<ul>
+{% for name in val1 %}
+<li>{{name}}</li>
+<hr>
+<br><br>
+{% endfor %}
+</ul>
+</body>
+</html>

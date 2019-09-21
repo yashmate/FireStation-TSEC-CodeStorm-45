@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
+  <style>
+
+  body{
+    background-color: black;
+    color: teal;
+    text-align:center;
+    font-size: 25px;
+    font-family: 'Turret Road', cursive;
+  }
+  li,h1{
+    padding: 10px;
+    border: 1px solid teal;
+  }
+  h1{
+    font-size: 35px;
+  }
+  #home{
+    position: absolute;
+    left: 85%;
+    top:3%
+  }
+  #back{
+    position: absolute;
+    right: 85%;
+    top:3%
+  }
+
+  </style>
+<title>View firestations</title></head>
+<body>
+  <a href="http://localhost:5000/"id='home'class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">Home
+</i></a>
+<a href="http://localhost:5000/reportFire"id='back'class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">Back
+</i></a>
+<br>
+<br>
+<br>
+  <h1>NEAREST FIRESTATIONS</h1>
+  <br><br>
+<ul>
+  {% for name in l1 %}
+  <li> {{ name }}  </li>
+  <br><br>
+  {% endfor %}
+</ul>
+<hr>
+<h1>NEAREST HOSPITALS</h1>
+<br><br>
+<ul>
+{% for name in l2 %}
+<li> {{ name }}  </li>
+<br><br>
+{% endfor %}
+</ul>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <style>
+     body{
+       background-image: url('/static/login.jpg');
+       background-size: cover;
+
+     }
+     form{
+       margin-left: 30%;
+     }
+     button{
+       position: absolute;
+       left: 20%
+     }
+     #home{
+       position: absolute;
+       left: 85%;
+       top:3%
+     }
+     #back{
+       position: absolute;
+       right: 85%;
+       top:3%
+     }
+     a{
+       color: white;
+     }
+
+
+     </style>
+      <title>Admin Login</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script>
+   </head>
+
+   <body>
+     <a href="http://localhost:5000/"id='home'class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">home
+</i></a>
+<a href="http://localhost:5000/"id='back'class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">chevron_left
+</i></a>
+     <form class="col sm12" action="http://localhost:5000/login",methods=post>
+       <div class = "row">
+        <form class = "col s12">
+          <br>
+          <br>
+          <br>
+           <div class = "row">
+              <div class = "input-field col s6">
+                 <i class = "material-icons prefix">account_circle</i>
+                 <input placeholder = "Username"  id = "name"
+                    type = "text" class = "active validate" required />
+                 <label for = "name">Username</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class = "input-field col s6">
+                <i class = "material-icons prefix">class</i>
+                 <label for = "password">Password</label>
+                 <input id = "password" type = "password" placeholder = "Password"
+                    class = "validate" required />
+              </div>
+           </div>
+           <div class="row">
+           <a href="http://localhost:5000/dashboard"><button class="btn waves-effect waves-light" name="action">Submit
+  <i class="material-icons right">send</i>
+</button></a>
+</div>
+     </form>
+
+   </body>
+</html>

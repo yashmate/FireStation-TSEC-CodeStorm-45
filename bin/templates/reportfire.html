@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{
+  background-image: url('/static/reportfire.jpg');
+  background-size: cover;
+
+}
+form{
+  height: 75%;
+  width: 50%;
+  position: absolute;
+  left: 45%;
+  top:10%;
+  color: teal;
+
+}
+#home{
+  position: absolute;
+  left: 85%;
+  top:3%
+}
+#back{
+  position: absolute;
+  right: 85%;
+  top:3%
+}
+
+</style>
+   <head>
+      <title>Report Fire</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script>
+      <script>
+         $(document).ready(function() {
+            $('select').material_select();
+         });
+      </script>
+   </head>
+
+   <body>
+     <a href="http://localhost:5000/"id='home'class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">home
+</i></a>
+<a href="http://localhost:5000/"id='back'class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">chevron_left
+</i></a>
+     <form action="http://localhost:5000/reportFire"class = "col s12" method="post">
+       <div class="row">
+    <div class="input-field col s12">
+    <select name="cause">
+      <option style="color:teal"value="" disabled selected>Cause of Fire</option>
+      <option value="electrical_appliances">Electrical Appliances</option>
+      <option value="stoves">Unattended Stoves</option>
+      <option value="smoking">Smoking</option>
+      <option value="wiring">Faulty Wiring</option>
+      <option value="flammable_liquids">Flammable Liquids</option>
+      <option value="forest_fires">Forest fires</option>
+    </select>
+    <label>Cause of Fire</label>
+  </div>
+</div>
+
+<div class="row">
+<div class="input-field col s12">
+<select name='intensity'>
+<option style="color:teal"value="" disabled selected>Intensity of Fire</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+<label>Intensity of Fire</label>
+</div>
+</div>
+
+        <div class = "row">
+           <div class = "input-field col s12">
+              <i class = "material-icons prefix">mode_edit</i>
+              <textarea name="location"id = "address" class = "materialize-textarea"></textarea>
+              <label for = "address">Location</label>
+           </div>
+        </div>
+
+        <div class="row center">
+        <input type="submit" class="btn waves-effect waves-light" type="submit" value="submit"name="action">
+<i class="material-icons right">send</i>
+</button>
+</div>
+
+
+     </form>
+   </body>
+</html>

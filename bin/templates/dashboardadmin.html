@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
+      <title>Real-Time Database</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script>
+
+      <style>
+         div {
+            width : 200px;
+            height : 200px;
+         }
+         body{
+           text-align: center;
+           color: teal;
+           background-color: white;
+           font-family: 'Turret Road', cursive;
+         }
+         #home{
+           position: absolute;
+           left: 85%;
+           top:3%
+         }
+         #back{
+           position: absolute;
+           right: 85%;
+           top:3%
+         }
+      </style>
+   </head>
+
+   <body class = "container">
+     <a href="http://localhost:5000/"id='home'class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">home
+</i></a>
+<a href="http://localhost:5000/dashboard"id='back'class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">chevron_left
+</i></a>
+      <h2>FIREFIGHTING DASHBOARD</h2>
+
+
+      <h3>History of Accidents</h3>
+      <table class = "striped bordered">
+         <thead>
+            <tr>
+               <th>Cause</th>
+               <th>Location</th>
+               <th>Intensity</th>
+               <th>Longitude</th>
+               <th>Latitude</th>
+               <th>Current Status</th>
+               <th>Casualties</th>
+               <th>Number of Firefighters</th>
+
+            </tr>
+         </thead>
+
+         <tbody>
+           {% for row in rows %}
+            <tr>
+
+               <td>{{ row["cause"] }}</td>
+               <td>{{ row["location"] }}</td>
+               <td>{{ row["intensity"] }}</td>
+               <td>{{ row["longitude"] }}</td>
+               <td>{{ row["latitude"] }}</td>
+               <td>{{ row["casualities"] }}</td>
+               <td>{{ row["firefighter"] }}</td>
+               <td>{{ row["current_status"] }}</td>
+
+            </tr>
+            {% endfor %}
+
+
+         </tbody>
+      </table>
+      <br><br><br>
+      <a href="http://localhost:5000/updatedb" class="waves-effect waves-light btn-large"><i class="material-icons right">system_update</i>UPDATE</a><br><br><br>
+      <a href="http://localhost:5000/insert" class="waves-effect waves-light btn-large"><i class="material-icons right">insert_chart</i>INSERT</a><br>
+
+
+
+   </body>
+</html>

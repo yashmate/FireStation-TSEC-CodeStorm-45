@@ -1,0 +1,60 @@
+Cause,Intensity,No of people Required to do the task, Faulty Wiring,Smoking,Unattended Stoves,Flammable Liquids,Electrical Appliances,Forest Fire,Intensity,Fire Brigades Required
+Faulty Wiring,7,15,1,0,0,0,0,0,7,2
+Faulty Wiring,6,15,1,0,0,0,0,0,6,2
+Faulty Wiring,8,18,1,0,0,0,0,0,8,3
+Faulty Wiring,6,16,1,0,0,0,0,0,6,3
+Faulty Wiring,9,20,1,0,0,0,0,0,9,5
+Smoking,3,5,0,1,0,0,0,0,3,1
+Smoking,4,8,0,1,0,0,0,0,4,2
+Smoking,2,4,0,1,0,0,0,0,2,1
+Smoking,4,8,0,1,0,0,0,0,4,1
+Smoking,3,6,0,1,0,0,0,0,3,3
+Smoking,5,12,0,1,0,0,0,0,5,2
+Smoking,4,8,0,1,0,0,0,0,4,2
+Smoking,3,4,0,1,0,0,0,0,3,1
+Smoking,4,8,0,1,0,0,0,0,4,2
+Smoking,2,4,0,1,0,0,0,0,2,1
+Unattended Stoves,5,10,0,0,1,0,0,0,5,3
+Unattended Stoves,6,12,0,0,1,0,0,0,6,3
+Unattended Stoves,4,11,0,0,1,0,0,0,4,3
+Unattended Stoves,7,14,0,0,1,0,0,0,7,4
+Unattended Stoves,5,11,0,0,1,0,0,0,5,2
+Flammable Liquids,9,19,0,0,0,1,0,0,9,5
+Flammable Liquids,7,16,0,0,0,1,0,0,7,4
+Flammable Liquids,8,17,0,0,0,1,0,0,8,4
+Flammable Liquids,6,14,0,0,0,1,0,0,6,3
+Flammable Liquids,9,15,0,0,0,1,0,0,9,4
+Flammable Liquids,7,16,0,0,0,1,0,0,7,5
+Flammable Liquids,8,18,0,0,0,1,0,0,8,5
+Flammable Liquids,7,16,0,0,0,1,0,0,7,4
+Flammable Liquids,9,20,0,0,0,1,0,0,9,6
+Flammable Liquids,10,20,0,0,0,1,0,0,10,6
+Faulty Wiring,7,16,1,0,0,0,0,0,7,5
+Faulty Wiring,8,19,1,0,0,0,0,0,8,5
+Faulty Wiring,9,17,1,0,0,0,0,0,9,4
+Faulty Wiring,8,18,1,0,0,0,0,0,8,5
+Faulty Wiring,7,16,1,0,0,0,0,0,7,4
+Electrical Appliances,2,4,0,0,0,0,1,0,2,1
+Electrical Appliances,3,6,0,0,0,0,1,0,3,1
+Electrical Appliances,1,2,0,0,0,0,1,0,1,1
+Electrical Appliances,4,6,0,0,0,0,1,0,4,1
+Electrical Appliances,2,4,0,0,0,0,1,0,2,1
+Electrical Appliances,1,3,0,0,0,0,1,0,1,1
+Electrical Appliances,3,5,0,0,0,0,1,0,3,1
+Electrical Appliances,2,4,0,0,0,0,1,0,2,1
+Electrical Appliances,2,4,0,0,0,0,1,0,2,1
+Electrical Appliances,4,8,0,0,0,0,1,0,4,1
+Forest Fire,9,20,0,0,0,0,0,1,9,5
+Forest Fire,10,19,0,0,0,0,0,1,10,5
+Forest Fire,8,20,0,0,0,0,0,1,8,5
+Forest Fire,9,18,0,0,0,0,0,1,9,5
+Forest Fire,10,20,0,0,0,0,0,1,10,5
+Unattended Stoves,6,12,0,0,1,0,0,0,6,2
+Unattended Stoves,5,10,0,0,1,0,0,0,5,2
+Unattended Stoves,7,13,0,0,1,0,0,0,7,3
+Unattended Stoves,4,11,0,0,1,0,0,0,4,2
+Unattended Stoves,5,12,0,0,1,0,0,0,5,3
+Faulty Wiring,,13,1,0,0,0,0,0,7,4
+Electrical Appliances,,9,0,0,0,0,1,0,4,2
+Smoking,,3,0,1,0,0,0,0,2,1
+,,9,0,0,0,1,0,0,4,2
